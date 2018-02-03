@@ -43,7 +43,24 @@ try:
     # 'data' contains the JSON data. The following formats the JSON data for display.
     parsed = json.loads(data)
     print ("Response:")
-    print (json.dumps(parsed, sort_keys=True, indent=2))
+    #this is the returned json:
+    #myJson = json.dumps(parsed, sort_keys=True, indent=2)
+    #print (json.dumps(parsed, sort_keys=True, indent=2))
+    #since we only care about a pure image description:
+
+    for things in parsed:
+        if(things == 'description'):
+            print('************')
+            print(things)
+            print('************')
+            for thing in parsed['description']['captions']:
+                    print thing
+                   
+                    
+                    
+
+
+
     conn.close()
 
 except Exception as e:

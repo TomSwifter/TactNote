@@ -1,6 +1,6 @@
 
 run:
-	python3 readJs.py
+	python getImageInfo.py
 
 clean:
 	rm *~
