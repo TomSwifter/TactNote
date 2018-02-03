@@ -1,5 +1,5 @@
 ########### Python 2.7 #############
-import httplib, urllib, base64, json
+import httplib, urllib, base64, json, os
 
 ###############################################
 #### Update or verify the following values. ###
@@ -31,7 +31,8 @@ params = urllib.urlencode({
 })
 
 # The URL of a JPEG image to analyze.
-body = "{'url':'https://upload.wikimedia.org/wikipedia/commons/1/12/Broadway_and_Times_Square_by_night.jpg'}"
+
+body = "{'url':'https://preview.ibb.co/mQjpzR/Whats_App_Image_2018_02_03_at_4_45_40_PM.jpg'}"
 
 try:
     # Execute the REST API call and get the response.
@@ -55,6 +56,8 @@ try:
             print('************')
             for thing in parsed['description']['captions']:
                     print thing
+                    print('*********')
+                    print ('You are reading a picture! this is {}').format(thing['text'])
                    
                     
                     
