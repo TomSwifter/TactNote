@@ -57,7 +57,7 @@ try:
             for thing in parsed['description']['captions']:
                     print thing
                     print('*********')
-                    print ('You are reading a picture! this is {}').format(thing['text'])
+                    print ('This is {}').format(thing['text'])
                    
                     
                     
