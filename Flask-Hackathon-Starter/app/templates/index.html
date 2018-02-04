@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block head %}
+    {{ super() }}
+{% endblock %}
+
+{% block content %}
+
+	<div id="background">
+		<img src="static/img/background.png" class="stretch" alt="" />
+	</div>
+
+	<div class="container" id="container-body">
+		<div class="row no-gutters">
+			<form method="post" enctype="multipart/form-data">
+				{{ form.hidden_tag() }}
+				<div class="form-group">
+				  <label for="exampleFormControlTextarea1">Enter your greeting</label>
+				  <textarea name="text" class="form-control" id="text" rows="3"></textarea>
+				</div>
+				<div class="bottom row no-gutters">
+					{{ form.file }}
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</div>
+			  </form>
+		</div>
+	</div>
+	
+
+{% endblock %}
