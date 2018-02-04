@@ -32,7 +32,7 @@ params = urllib.urlencode({
 
 # The URL of a JPEG image to analyze.
 
-body = "{'url':'https://preview.ibb.co/ePhJb6/Whats_App_Image_2018_02_03_at_4_57_20_PM.jpg'}"
+body = "{'url':'https://image.ibb.co/nx0eG6/bambou.jpg'}"
 
 try:
     # Execute the REST API call and get the response.
