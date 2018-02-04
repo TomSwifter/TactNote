@@ -8,8 +8,8 @@ The web interface allows anyone who can use a computer to send a greeting card a
 
 The building blocks:
 
-Web interface (HTML/CSS)
-AWS
+- Web interface and signup form (HTML/CSS)
+- AWS
 - A python program to translate text into arrays of 0's and 1's representing braille
 - A Python program which takes a picture as input, queries Microsoft vision API, and returns a textual description of what's in the image
 - A python script that takes an array of arrays of 0's and 1's (representing braille) and converts it into a 3D braille model.
